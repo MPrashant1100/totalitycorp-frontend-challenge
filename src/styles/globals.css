@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Classes */
+@layer components {
+  body {
+    @apply scroll-smooth font-primary;
+  }
+
+  /* 1. Gradients */
+  .gradient-1 {
+    @apply bg-gradient-to-r from-[#F6FFBE] to-[#F99156];
+  }
+
+  .gradient-2 {
+    @apply bg-gradient-to-b from-[#2555FF] to-[#9B8BFF];
+  }
+
+  .gradient-3 {
+    @apply bg-gradient-to-b from-[#FFE259] to-[#FFA751];
+  }
+
+  .gradient-4 {
+    @apply bg-gradient-to-b from-[#FF76E1] to-[#D0AA7D];
+  }
+
+  .gradient-5 {
+    @apply bg-gradient-to-b from-[#923CFF] to-[#4E4EFF];
+  }
+
+  .gradient-6 {
+    @apply bg-gradient-to-b from-[#F0F3FF] to-[#FFA4C5];
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-b from-[#070607] to-[#1B1B1B];
+  }
+
+  /* 2. Fonts */
+  .heading-1 {
+    @apply text-header-1 font-black text-contentLight;
+  }
+
+  .heading-2 {
+    @apply text-header-2 font-bold text-contentLight;
+  }
+
+  .heading-3 {
+    @apply text-header-3 font-bold text-contentLight;
+  }
+
+  .heading-4 {
+    @apply text-header-4 font-semibold text-contentLight;
+  }
+
+  .heading-5 {
+    @apply text-header-5 font-semibold text-contentLight;
+  }
+
+  .subtitle {
+    @apply text-subtitle font-normal text-contentLight;
+  }
+
+  .paragraph {
+    @apply text-paragraph font-normal text-contentLight;
+  }
+
+  .strong-text {
+    @apply text-strong-text font-semibold text-contentLight;
+  }
+
+  .pre-title {
+    @apply text-pre-title font-medium text-contentLight;
+  }
+
+  .button-text {
+    @apply text-button-text font-bold text-contentLight;
+  }
+
+  /* Image */
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+  }
+
+  /* Link */
+  .link {
+    @apply text-button-text font-bold text-contentLight;
+  }
+
+  .button {
+    @apply w-full rounded-1 text-button-text font-bold text-contentLight;
+  }
+
+  .disabled {
+    pointer-events: none;
+  }
+}
