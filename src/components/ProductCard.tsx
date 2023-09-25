@@ -1,7 +1,8 @@
+import { ProductCardProps } from '@/interfaces';
 import Image from 'next/image';
 import React from 'react';
 
-const ProductCard = ({ product, addToCart, removeFromCart, isInCart }) => {
+const ProductCard = ({ product, addToCart, removeFromCart, isInCart }:ProductCardProps) => {
   return (
     <div className="p-4 border rounded shadow">
      <Image src={product.image} alt={product.title} width={96} height={96}/>

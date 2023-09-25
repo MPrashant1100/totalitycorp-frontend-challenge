@@ -1,7 +1,8 @@
+import { CartProps } from '@/interfaces';
 import React from 'react';
 
-const Cart = ({ cart, removeFromCart }) => {
-  const cartTotal = cart.reduce((total, product) => total + product.price, 0);
+const Cart = ({ cart, removeFromCart }: CartProps) => {
+  const cartTotal = cart.reduce((total: any, product: { price: any; }) => total + product.price, 0);
 
   return (
     <div className="p-4 border rounded shadow">
@@ -10,7 +11,7 @@ const Cart = ({ cart, removeFromCart }) => {
         <p>Your cart is empty.</p>
       ) : (
         <div>
-          {cart.map((item) => (
+          {cart.map((item:any) => (
             <div key={item.id} className="flex justify-between items-center mb-2">
               <div>
                 <p>{item.name}</p>

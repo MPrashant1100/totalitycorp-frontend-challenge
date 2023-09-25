@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Checkout = ({ cart }) => {
+const Checkout = ({ cart }:any) => {
   const [shippingInfo, setShippingInfo] = useState({
     name: '',
     address: '',
@@ -14,7 +14,7 @@ const Checkout = ({ cart }) => {
     cvv: '',
   });
 
-  const handleShippingInfoChange = (e) => {
+  const handleShippingInfoChange = (e:any) => {
     const { name, value } = e.target;
     setShippingInfo({
       ...shippingInfo,
@@ -22,7 +22,7 @@ const Checkout = ({ cart }) => {
     });
   };
 
-  const handlePaymentInfoChange = (e) => {
+  const handlePaymentInfoChange = (e:any) => {
     const { name, value } = e.target;
     setPaymentInfo({
       ...paymentInfo,
@@ -31,7 +31,6 @@ const Checkout = ({ cart }) => {
   };
 
   const handleCheckout = () => {
-    // You can implement the logic for processing the order here
     console.log('Shipping Info:', shippingInfo);
     console.log('Payment Info:', paymentInfo);
     console.log('Cart:', cart);

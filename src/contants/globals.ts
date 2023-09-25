@@ -1,11 +1,12 @@
-const products = [
+import { ProductProps } from "@/interfaces";
+
+const products : ProductProps[] = [
   {
     id: 1,
     title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
     price: 109.95,
     category: "men's clothing",
     image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-    rating: { rate: 3.9, count: 120 },
   },
   {
     id: 2,
@@ -14,7 +15,6 @@ const products = [
     category: "men's clothing",
     image:
       "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-    rating: { rate: 4.1, count: 259 },
   },
   {
     id: 3,
@@ -22,7 +22,6 @@ const products = [
     price: 55.99,
     category: "men's clothing",
     image: "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-    rating: { rate: 4.7, count: 500 },
   },
   {
     id: 4,
@@ -30,7 +29,6 @@ const products = [
     price: 15.99,
     category: "men's clothing",
     image: "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
-    rating: { rate: 2.1, count: 430 },
   },
   {
     id: 5,
@@ -39,7 +37,6 @@ const products = [
     price: 695,
     category: "jewelery",
     image: "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
-    rating: { rate: 4.6, count: 400 },
   },
   {
     id: 6,
@@ -47,7 +44,6 @@ const products = [
     price: 168,
     category: "jewelery",
     image: "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-    rating: { rate: 3.9, count: 70 },
   },
   {
     id: 7,
@@ -55,7 +51,6 @@ const products = [
     price: 9.99,
     category: "jewelery",
     image: "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
-    rating: { rate: 3, count: 400 },
   },
   {
     id: 8,
@@ -63,7 +58,6 @@ const products = [
     price: 10.99,
     category: "jewelery",
     image: "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
-    rating: { rate: 1.9, count: 100 },
   },
   {
     id: 9,
@@ -71,7 +65,6 @@ const products = [
     price: 64,
     category: "electronics",
     image: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
-    rating: { rate: 3.3, count: 203 },
   },
   {
     id: 10,
@@ -79,7 +72,6 @@ const products = [
     price: 109,
     category: "electronics",
     image: "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
-    rating: { rate: 2.9, count: 470 },
   },
 ];
 

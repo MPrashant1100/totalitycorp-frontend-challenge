@@ -4,11 +4,12 @@ import ProductList from '../components/ProductList';
 import Cart from '../components/Cart';
 import Checkout from '../components/Checkout';
 import { products } from '../contants';
+import { ProductProps } from '@/interfaces';
 
 const Home = () => {
   const [cart, setCart] = useState([]);
 
-  const addToCart = (product: any) => {
+  const addToCart = (product: ProductProps) => {
     setCart([...cart, product]);
   };
 
@@ -20,10 +21,10 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>My E-commerce Store</title>
+        <title>E-commerce Store</title>
       </Head>
       <div className="container mx-auto py-8">
-        <h1 className="text-4xl font-semibold mb-8">Welcome to our E-commerce Store</h1>
+        <h1 className="text-4xl font-semibold mb-8 text-primary flex justify-center items-center">Welcome to my E-commerce Store</h1>
         <div className="flex">
           <div className="w-3/4 pr-4">
             <ProductList cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} />
