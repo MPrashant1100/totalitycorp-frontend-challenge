@@ -1,6 +1,6 @@
-import { ProductProps } from "@/interfaces";
+import { StaticProductProps } from "@/interfaces";
 
-const products : ProductProps[] = [
+const products : StaticProductProps[] = [
   {
     id: 1,
     title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",

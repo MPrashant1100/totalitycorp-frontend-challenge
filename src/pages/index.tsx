@@ -3,18 +3,18 @@ import Head from 'next/head';
 import ProductList from '../components/ProductList';
 import Cart from '../components/Cart';
 import Checkout from '../components/Checkout';
-import { products } from '../contants';
-import { ProductProps } from '@/interfaces';
+import { products } from '@/contants';
 
 const Home = () => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState<any>();
 
-  const addToCart = (product: ProductProps) => {
+  const addToCart = (productId: string) => {
+    const product = products.find((product) => product.id === productId)
     setCart([...cart, product]);
   };
 
-  const removeFromCart = (productId) => {
-    const updatedCart = cart.filter((item) => item.id !== productId);
+  const removeFromCart = (productId: any) => {
+    const updatedCart = cart.filter((item:any) => item.id !== productId);
     setCart(updatedCart);
   };
 
