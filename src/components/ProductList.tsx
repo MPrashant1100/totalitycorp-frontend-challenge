@@ -15,6 +15,7 @@ const ProductList = ({ cart, addToCart, removeFromCart} : ProductCardsProps) => 
           isInCart={cart.some((item: any) => item.id === product.id)} />
       ))}
     </div>
+    
   );
 };
 
