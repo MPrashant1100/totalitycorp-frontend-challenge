@@ -1,9 +1,15 @@
+export interface ProductProps {
+  title: string ;
+  image: any;
+  category:string;
+  price:number;
+  id:number;
+}
 export interface ProductCardProps {
-  product: string;
+  product: ProductProps;
   addToCart: any;
   removeFromCart: any; 
   isInCart: any;
-  title:string;
 }
 export interface ImageProps {
   product: string;
